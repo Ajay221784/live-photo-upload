@@ -1,14 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
   <title>Live Photo Capture</title>
 </head>
 <body>
-  <h3>Take a Live Photo</h3>
-  <form action="https://formspree.io/f/mgvykewk" method="POST" enctype="multipart/form-data">
+  <h2>Live Photo Upload</h2>
+  <p>This form only allows taking a photo using your device’s camera. Gallery upload is not supported.</p>
+
+  <form action="https://formspree.io/f/YOUR_FORMSPREE_ENDPOINT_URL" method="POST" enctype="multipart/form-data">
+    <label for="name">Your Name:</label><br>
+    <input type="text" name="name" required><br><br>
+
+    <label for="email">Your Email:</label><br>
+    <input type="email" name="_replyto" required><br><br>
+
+    <label for="photo">Take a Live Photo:</label><br>
     <input type="file" accept="image/*" capture="environment" name="photo" required><br><br>
-    <input type="text" name="name" placeholder="Your Name"><br>
-    <input type="submit" value="Upload">
+
+    <input type="submit" value="Submit Photo">
   </form>
+
+  <p>By submitting, you confirm this photo is captured live and you consent to it being used for verification.</p>
 </body>
 </html>
