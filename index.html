@@ -1,22 +1,22 @@
-<form method="POST" action="https://YOUR_EC2_PUBLIC_IP/upload" enctype="multipart/form-data">
+<form method="POST" action="http://13.203.221.20:5000/upload" enctype="multipart/form-data">
 
   <label for="invoiceDate">📅 Invoice Date:</label><br>
-  <input type="date" id="invoiceDate" name="invoice_date" required><br><br>
+  <input type="date" id="invoiceDate" name="Invoice Date" required><br><br>
 
   <label for="invoiceNumber">🧾 Invoice Number:</label><br>
-  <input type="text" id="invoiceNumber" name="invoice_number" required><br><br>
+  <input type="text" id="invoiceNumber" name="Invoice Number" required><br><br>
 
   <label for="serialNumber">🔢 Serial Number:</label><br>
-  <input type="text" id="serialNumber" name="serial_number" required><br><br>
+  <input type="text" id="serialNumber" name="Serial Number" required><br><br>
 
   <label for="invoicePhoto">🧾 Invoice Photo (Live):</label><br>
-  <input type="file" id="invoicePhoto" name="invoice_photo" accept="image/*" capture="environment" required><br><br>
+  <input type="file" id="invoicePhoto" name="Invoice Photo" accept="image/*" capture="environment" required><br><br>
 
   <label for="goodsPhoto1">📦 Goods Photo 1 (Live):</label><br>
-  <input type="file" id="goodsPhoto1" name="goods_photo_1" accept="image/*" capture="environment" required><br><br>
+  <input type="file" id="goodsPhoto1" name="Goods Photo 1" accept="image/*" capture="environment" required><br><br>
 
   <label for="goodsPhoto2">📦 Goods Photo 2 (Live):</label><br>
-  <input type="file" id="goodsPhoto2" name="goods_photo_2" accept="image/*" capture="environment" required><br><br>
+  <input type="file" id="goodsPhoto2" name="Goods Photo 2" accept="image/*" capture="environment" required><br><br>
 
   <button type="submit">Submit</button>
 </form>
